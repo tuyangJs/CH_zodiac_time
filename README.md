@@ -32,7 +32,7 @@ npm i chinesehours
 ```javascript
 import { GetHours } from 'chinesehours' 
 console.log(GetHours())
-//log 戌时（黄昏）七刻
+//log 戌时（黄昏）子正三刻
 
 ```
 
@@ -42,12 +42,12 @@ console.log(GetHours())
 
 - `地支`  - 子时
 - `时辰`  - 夜半
-- `时刻` - 一刻
+- `时刻` - 子正 & 子初
 
 ```javascript
 import { GetHours } from 'chinesehours' 
 console.log(GetHours('地支：[地支] 时辰：[时辰] 时刻:[时刻]'))
-//log 地支：戌时 时辰：黄昏 时刻:一刻
+//log 地支：戌时 时辰：黄昏 时刻:子初一刻
 
 ```
 
