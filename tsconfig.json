@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",  // 或 "ESModule"
+    "target": "ESNext",  // 或 "ES6"
+    "incremental": true,
+    "outDir": "./dist",
+    "declaration": true,
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.test.ts"]
+}

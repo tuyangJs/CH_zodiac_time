@@ -1,6 +1,6 @@
-function 获取当前时辰(format, currentTime) {
-    format = format ? format : "地支（时辰）时刻"
-    currentTime = currentTime ? currentTime : new Date
+
+type timeFormat = (format?: string, currentTime?: Date) => string
+const GetHours: timeFormat = (format: string = "[地支]（[时辰]）[时刻]", currentTime: Date = new Date()) => {
 
     // 获取小时和分钟
     const hours = currentTime.getHours();
@@ -13,12 +13,13 @@ function 获取当前时辰(format, currentTime) {
     minutes = (TimeIndex(hours - 1) === i) ? (60 + minutes) : minutes //计算是否延长分钟大于60
     const 刻 = Math.floor(minutes / 15)  // 每时辰划分为8刻
 
-    format = format.replace("地支", 十二地支[i] + '时')
-    format = format.replace("时辰", 十二辰时[i])
-    format = format.replace("时刻", CNint[刻] + '刻')
-    function TimeIndex(h) {
-        return Math.floor((h + 1) / 2 )
+    format = format.replace("[地支]", 十二地支[i] + '时')
+    format = format.replace("[时辰]", 十二辰时[i])
+    format = format.replace("[时刻]", CNint[刻] + '刻')
+    function TimeIndex(h: number) {
+        return Math.floor((h + 1) / 2)
     }
     return format
 }
-console.log(获取当前时辰()) 
+export  { GetHours }
+export type { timeFormat }
