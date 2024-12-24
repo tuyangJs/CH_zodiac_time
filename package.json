@@ -1,13 +1,14 @@
 {
   "name": "chinesehours",
-  "version": "1.0.6",
+  "version": "1.0.68",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "private": false,
   "type": "module",
   "scripts": {
     "dev": "webpack --mode development && node dist/index.js",
-    "build": "webpack --mode development",
+    "build": "tsc",
+    "webpack": "npm run build && webpack --mode production",
     "test": "jest",
     "prepublishOnly": "npm run build"
   },
@@ -21,9 +22,5 @@
     "typescript": "^5.7.2",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1"
-  },
-  "dependencies": {
-    "build": "^0.1.4",
-    "terser-webpack-plugin": "^5.3.11"
   }
 }

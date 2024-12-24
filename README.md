@@ -47,7 +47,7 @@ console.log(GetHours())
 ```javascript
 import { GetHours } from 'chinesehours' 
 console.log(GetHours('地支：[地支] 时辰：[时辰] 时刻:[时刻]'))
-//log 地支：戌时 时辰：黄昏 时刻:七刻
+//log 地支：戌时 时辰：黄昏 时刻:一刻
 
 ```
 
@@ -57,7 +57,7 @@ console.log(GetHours('地支：[地支] 时辰：[时辰] 时刻:[时刻]'))
 import { GetHours } from 'chinesehours' 
 const customDate = new Date('2024-12-24T14:30:00');
 console.log(GetHours(customDate))
-//log 未时（日昳）七刻
+//log 未时（日昳）子正三刻
 ```
 
 #### 同时自定义格式和指定时间
@@ -65,7 +65,7 @@ console.log(GetHours(customDate))
 ```javascript
 import { GetHours } from 'chinesehours' 
 const customDate = new Date('2024-12-24T14:30:00');
-console.log(GetHours('地支：[地支] 时辰：[时辰] 时刻:[时刻]',customDate))
-//log 地支：未时 时辰：日昳 时刻:七刻
+console.log(GetHours('地支：[地支] - 时刻:[时刻]',customDate))
+//log 地支：未时 - 时刻:子正三刻
 ```
 

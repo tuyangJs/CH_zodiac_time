@@ -2,10 +2,10 @@ import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
 
 export default {
-  entry: './src/index.ts',
+  entry: './dist/index.js',
   output: {
     filename: 'index.js',
-    path: path.resolve('./', 'dist'),
+    path: path.resolve('./', 'dist'),  // 使用 __dirname 来确保路径正确
   },
   resolve: {
     extensions: ['.ts', '.js'],
@@ -20,16 +20,21 @@ export default {
     ],
   },
   optimization: {
-    minimize: true, // 启用压缩
+    minimize: false,  // 启用压缩
+    usedExports: false,  // 禁用未使用导出的优化
     minimizer: [
       new TerserPlugin({
         terserOptions: {
+          output: {
+            comments: false,    // 去除注释
+          },
           compress: {
-            drop_console: true, // 删除所有 console.*
+           // drop_console: true,  // 删除 console.* 语句
+            passes: 2,  
           },
         },
       }),
     ],
   },
-  mode: 'production', // 确保在生产模式下启用压缩
+  mode: 'production',  // 确保在生产模式下启用压缩
 };
