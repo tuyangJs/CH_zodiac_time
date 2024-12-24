@@ -51,4 +51,21 @@ console.log(GetHours('地支：[地支] 时辰：[时辰] 时刻:[时刻]'))
 
 ```
 
-#### 
+#### 指定时间
+
+```javascript
+import { GetHours } from 'chinesehours' 
+const customDate = new Date('2024-12-24T14:30:00');
+console.log(GetHours(customDate))
+//log 未时（日昳）七刻
+```
+
+#### 同时自定义格式和指定时间
+
+```javascript
+import { GetHours } from 'chinesehours' 
+const customDate = new Date('2024-12-24T14:30:00');
+console.log(GetHours('地支：[地支] 时辰：[时辰] 时刻:[时刻]',customDate))
+//log 地支：未时 时辰：日昳 时刻:七刻
+```
+
