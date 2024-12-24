@@ -1,0 +1,14 @@
+{
+  "name": "zodiac_time",
+  "version": "1.0.0",
+  "main": "index.js",
+  "module": "main/index.js", 
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
