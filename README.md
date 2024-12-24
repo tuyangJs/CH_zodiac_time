@@ -22,7 +22,7 @@
 ### 安装
 
 ```bash
-npm i ChineseHours 
+npm i chinesehours 
 ```
 
 
@@ -30,7 +30,7 @@ npm i ChineseHours
 ### 使用例子
 
 ```javascript
-import { GetHours } from 'ChineseHours' 
+import { GetHours } from 'chinesehours' 
 console.log(GetHours())
 //log 戌时（黄昏）七刻
 
@@ -45,7 +45,7 @@ console.log(GetHours())
 - `时刻` - 一刻
 
 ```javascript
-import { GetHours } from 'ChineseHours' 
+import { GetHours } from 'chinesehours' 
 console.log(GetHours('地支：[地支] 时辰：[时辰] 时刻:[时刻]'))
 //log 地支：戌时 时辰：黄昏 时刻:七刻
 
