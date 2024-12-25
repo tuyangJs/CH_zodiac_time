@@ -99,6 +99,7 @@ console.log(GetHours('地支：[地支] - 时刻:[时刻]',customDate))
 ### 使用例子
 
 ```typescript
+import { Calendar } from 'chinesehours' 
 console.log(Calendar.solar2lunar(1987, 11, 1));
 //log
  {
