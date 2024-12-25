@@ -2,13 +2,17 @@ import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
 
 export default {
-  entry: './dist/index.js',
+  entry: './src/index.ts',
+  
   output: {
     filename: 'index.js',
-    path: path.resolve('./', 'dist'),  // 使用 __dirname 来确保路径正确
+    path: path.resolve('./dist'),  // 使用 __dirname 来确保路径正确
   },
   resolve: {
     extensions: ['.ts', '.js'],
+    alias: {
+      CalendarCode: path.resolve( './dist/CalendarCode'),
+    },
   },
   module: {
     rules: [
@@ -29,12 +33,13 @@ export default {
             comments: false,    // 去除注释
           },
           compress: {
-           // drop_console: true,  // 删除 console.* 语句
-            passes: 2,  
+            // drop_console: true,  // 删除 console.* 语句
+            passes: 2,
           },
         },
       }),
     ],
   },
+  target: 'node',
   mode: 'production',  // 确保在生产模式下启用压缩
 };
