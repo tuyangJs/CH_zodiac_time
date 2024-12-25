@@ -137,7 +137,7 @@ console.log(Calendar.solar2lunar(1987, 11, 1));
 
 ```
 
-[返回数据结构说明](#18. `solar2lunar(Year?: number | string | Date | Dayjs, Month?: number | string, Day?: number | string)) 
+[返回数据结构说明](#18-solar2lunaryear-number--string--date--dayjs-month-number--string-day-number--string)
 
 ### 1. `getYearCN(year: number)`
 
@@ -505,37 +505,37 @@ console.log(Calendar.getAllFestival(1987));
 **返回值**：
 
 - `Object`：包含公历和农历详细信息的对象。
-  1. `lunarYear`: 农历年份
-  2. `lunarYearCN`:农历年份的中文表示，即将数字1987分开并用汉字表示：一九八七。
-  3. `lunarMonth`: 农历月份。
-  4. `lunarDay`: 10 农历日期，这个日期是农历的初十，即九月十日。
-  5. `lunarMonthDays`: 农历月份的天数，农历的九月有29天。
-  6. `fullLunarMonthString`: 完整的农历日期字符串。
-  7. `zodiac`: 生肖
-  8. `IMonthCn`: 农历月份的中文名称
-  9. `IDayCn`: 农历日期的中文名称，即初十。
-  10. `solarYear`: 1987 公历年份，1987年是公历年份。
-  11. `solarYearCN`: 公历年份的中文表示，即一九八七。
-  12. `solarMonth`: 公历月份。
-  13. `solarDay`: 公历日期。
-  14. `solarMonthDays`: 公历月份的天数
-  15. `gzYear`: 地支年份
-  16. `gzMonth`: 天干地支月份
-  17. `gzDay`: 天干地支日期。
-  18. `isToday`: 是否是今天。
-  19. `isLeapMonth`: 是否是闰月。
-  20. `isLeapYear`: 是否是闰年。
-  21. `nWeek`: 星期几的数字表示，7表示星期天。
-  22. `ncWeek`: 星期几的中文表示，即星期日。
-  23. `isTerm`: 是否是节气。
-  24. `Term`: 节气名称。
-  25. `constellation`: 星座，根据公历日期。
-  26. `GzNy`: 五行，此日期的五行是炉中火。
-  27. `astroEn`: 星座的英文表示。
-  28. `isFestival`: 是否是节日。
-  29. `festivalName`: 节日名称。
-  30. `festivalEnName`: 节日的英文名称。
-  31. `isLunarFestival`: 是否是农历节日。
+  - `lunarYear`: 农历年份
+  - `lunarYearCN`:农历年份的中文表示，即将数字1987分开并用汉字表示：一九八七。
+  - `lunarMonth`: 农历月份。
+  - `lunarDay`: 10 农历日期，这个日期是农历的初十，即九月十日。
+  - `lunarMonthDays`: 农历月份的天数，农历的九月有29天。
+  - `fullLunarMonthString`: 完整的农历日期字符串。
+  - `zodiac`: 生肖
+  - `IMonthCn`: 农历月份的中文名称
+  - `IDayCn`: 农历日期的中文名称，即初十。
+  -  `solarYear`: 1987 公历年份，1987年是公历年份。
+  -  `solarYearCN`: 公历年份的中文表示，即一九八七。
+  -  `solarMonth`: 公历月份。
+  -  `solarDay`: 公历日期。
+  -  `solarMonthDays`: 公历月份的天数
+  -  `gzYear`: 地支年份
+  -  `gzMonth`: 天干地支月份
+  -  `gzDay`: 天干地支日期。
+  -  `isToday`: 是否是今天。
+  -  `isLeapMonth`: 是否是闰月。
+  -  `isLeapYear`: 是否是闰年。
+  -  `nWeek`: 星期几的数字表示，7表示星期天。
+  -  `ncWeek`: 星期几的中文表示，即星期日。
+  -  `isTerm`: 是否是节气。
+  -  `Term`: 节气名称。
+  -  `constellation`: 星座，根据公历日期。
+  -  `GzNy`: 五行，此日期的五行是炉中火。
+  -  `astroEn`: 星座的英文表示。
+  -  `isFestival`: 是否是节日。
+  -  `festivalName`: 节日名称。
+  -  `festivalEnName`: 节日的英文名称。
+  -  `isLunarFestival`: 是否是农历节日。
 
 ```typescript
 console.log(Calendar.solar2lunar(1987, 11, 1));
