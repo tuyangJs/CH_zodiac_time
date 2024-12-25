@@ -56,7 +56,7 @@ console.log(GetHours())
   - `HoursCh`：时辰中文名称（如“鸡鸣”）。
   - `minutes`：当前分钟数。
   - `momentType`：刻的分类（“初”或“正”）。
-  - `Amoment`：刻数（1到4）。
+  - `Amoment`：刻数（0到3）。
   - `momentText`：完整的时刻描述（如“子初一刻”）。
   - `format`：格式化后的完整时间文本。
 
